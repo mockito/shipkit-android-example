@@ -5,16 +5,22 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://jitpack.io' }
+        gradlePluginPortal()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.0-alpha06'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.github.koral--:shipkit:5406deb9d1746f963d1b132bccb3cca17021c3e9"
+        //TODO replace with parent shipkit project once Android support is ready
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+
+apply plugin: 'org.shipkit.java'
+group = "org.shipkit.android"
 
 allprojects {
     repositories {

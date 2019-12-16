@@ -1,6 +1,12 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'org.shipkit.bintray'
+
+apply plugin: 'org.shipkit.android-publish'
+
+androidPublish.artifactId = 'sample'
+description = "Sample Android library"
 
 android {
     compileSdkVersion 29
