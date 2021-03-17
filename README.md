@@ -1,6 +1,6 @@
 # Deprecated
 
-The continuation of Shipkit plugins can be found at https://github.com/shipkit/shipkit-changelot
+The continuation of Shipkit plugins can be found at https://github.com/shipkit/shipkit-changelog
 
 # Shipkit Android example
 
